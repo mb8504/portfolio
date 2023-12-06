@@ -1,0 +1,43 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+
+body {
+  background-color: white;
+  height: 100%;
+  font-family: 'Source Code Pro', monospace;
+}
+
+h1 {
+  font-size: 5em;
+  color: white;
+}
+
+span {
+  border-right: .05em solid;
+  border-width: 2rem;
+  animation: caret 1s steps(1) infinite;
+}
+
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
+
+/* #161b30 */
