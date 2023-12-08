@@ -1,0 +1,135 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  background-color: white;
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 1.8rem;
+  align-items: center;
+}
+
+/* NAVBAR SECTION */
+
+.nav {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  align-items: flex-start;
+  width: 100%;
+  display: none;
+  background-color: white;
+  color: #161b30;
+  font-weight: bold;
+  flex-direction: column;
+  margin-top: 4rem;
+}
+
+.nav__list {
+  display: flex;
+  text-decoration: none;
+  list-style-type: none;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.nav__item {
+  text-align: center;
+  padding: .5rem 1rem;
+}
+
+.nav__toggle {
+  position: absolute;
+  top: 1.8rem;
+  right: 1.7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 1.9rem;
+  height: 1.7rem;
+  background: url("/images/menu.png");
+  background-repeat: no-repeat;
+  border: 0;
+}
+
+.nav__toggle.active {
+  background: url("/images/close_menu.png");
+}
+
+.nav.active {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .nav__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    width: 100%;
+
+  }
+  .nav__toggle {
+    display: none;
+  }
+  .nav {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    background-color: red;
+    margin: 0;
+  }
+  .nav__item {
+    text-align: center;
+    padding: 1.5rem;
+  }
+}
+
+/* TYPEWRITER ANIMATION */
+
+.welcome {
+  align-items: center;
+  background-color: aqua;
+  margin-top: 4rem;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #121212;
+  font-family: 'Source Code Pro', monospace;
+}
+
+span {
+  border-right: .05em solid;
+  border-width: 1.5rem;
+  animation: caret 1s steps(1) infinite;
+}
+
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
+
+

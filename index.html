@@ -8,14 +8,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,200&family=Prata&family=Source+Code+Pro&family=Work+Sans:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="/js/script.js"></script>
+    <script src="/js/nav.js" defer></script>
 </head>
 <body>
 
     <header>
-        <div class="container">
-            <nav class="nav">
+        <div class="header__container container">
+            <button class="nav__toggle" id="mobile-toggle-button" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav" id="mobile-navbar">
                 <ul class="nav__list">
                     <li class="nav__item"><a href="#about"></a>About</li>
                     <li class="nav__item"><a href="#projects"></a>Projects</li>
@@ -25,19 +29,24 @@
         </div>
     </header>
 
-    <section class="about-me" id="about">
-        <div class="section__container">
+    <div class="welcome container">
+        <h1>Welcome to my portfolio!</h1>
+    </div>
+    
+
+    <!-- <section class="about-me" id="about">
+        <div class="section__container container">
             <div class="section__container--about">
                 <h1>Who I am</h1>
             </div>
 
         </div>
-    </section>
+    </section> -->
 
 
 
 
-    <!-- <h1>Welcome to my portfolio!</h1> -->
+
 
     
 </body>
