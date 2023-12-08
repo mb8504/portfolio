@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded',function(){
-    const headlineText = "Welcome to my portfolio!";
+    const headlineText = "Hi there!";
 
      function StartTextAnimation(i) {
       if (i < headlineText.length) {
