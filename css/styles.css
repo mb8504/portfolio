@@ -110,7 +110,7 @@ body {
     flex-direction: row;
     justify-content: end;
     width: 100%;
-
+    
   }
   .nav__toggle {
     display: none;
@@ -125,6 +125,10 @@ body {
     text-align: center;
     padding: 1.5rem;
   }
+  .nav__item:hover {
+    color: #ED7B6A;
+    cursor: pointer;
+  }
 }
 
 /* TYPEWRITER ANIMATION */
@@ -136,12 +140,20 @@ body {
 .welcome {
   display: flex;
   justify-content: center;
+  margin-top: 4rem;
 }
 
-h1, h2 {
+h1 {
   font-size: 2rem;
   color: white;
   font-family: 'Source Code Pro', monospace;
+}
+
+h2 {
+  color: white;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 1.5rem;
+  color: #ED7B6A;
 }
 
 span {
@@ -171,7 +183,7 @@ align-items: center;
 
 .section__title {
   font-weight: bold;
-  font-size: 47px;
+  font-size: 56px;
   margin-bottom: .5rem;
   margin-top: 3rem;
   text-align: center;
@@ -190,7 +202,7 @@ align-items: center;
   background-color: #ED7B6A;
   font-size: 37px;
   color: white;
-  margin-top: .2rem;
+  margin-top: .4rem;
 }
 
 .dev_icon {
@@ -216,3 +228,19 @@ align-items: center;
   }
 }
 
+/* ABOUT ME */
+
+.about-me {
+  margin-top: 8rem;
+}
+
+.section__container__about p {
+  margin-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  color: white;
+  font-size: 1.5;
+}
+
+.section__container__about {
+  align-items: center;
+}
