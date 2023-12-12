@@ -126,7 +126,7 @@ body {
     padding: 1.5rem;
   }
   .nav__item:hover {
-    color: #ED7B6A;
+    color: #ef7360;
     cursor: pointer;
   }
 }
@@ -153,7 +153,7 @@ h2 {
   color: white;
   font-family: 'Source Code Pro', monospace;
   font-size: 1.5rem;
-  color: #ED7B6A;
+  color: #ef7360;
 }
 
 span {
@@ -191,7 +191,7 @@ align-items: center;
 }
 
 .section__name {
-  color: #ED7B6A;
+  color: #ef7360;
 }
 
 .section__subtitle {
@@ -199,7 +199,7 @@ align-items: center;
   justify-content: center;
   font-size: 100px;
   letter-spacing: 2.7px;
-  background-color: #ED7B6A;
+  background-color: #ef7360;
   font-size: 37px;
   color: white;
   margin-top: .4rem;
@@ -243,4 +243,108 @@ align-items: center;
 
 .section__container__about {
   align-items: center;
+}
+
+/* MY PROJECTS  */
+
+.projects {
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+}
+
+.projects__container {
+  display: grid;
+  place-items: center;
+  margin-top: 4rem;
+}
+
+.project__sidebar img {
+  height: auto;
+  width: 100%;
+}
+
+.project__body {
+  line-height: 1.5;
+  padding-left: .3rem;
+  padding-right: .3rem;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.card {
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+  width: 90%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+h3 {
+  font-weight: bold;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: .5rem;
+}
+
+@media (min-width: 768px) {
+  .card {
+    flex-direction: row;
+  }
+}
+
+/* BUTTONS */
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 0.8rem;
+
+}
+
+.view__site {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+  color: #7691ff;
+  border-radius: 4px;
+  border: solid #7691ff 2px;
+}
+
+.view__code {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+  color: #7691ff;
+  border-radius: 4px;
+  border: solid #7691ff 2px;
+}
+
+.git__img {
+  height: 38px;
+  width: 38px;
+  margin-right: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    margin-bottom: 0;
+  }
+  .view__site {
+    margin-bottom: 1rem;
+  }
 }
