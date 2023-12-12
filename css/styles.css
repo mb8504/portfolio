@@ -69,6 +69,18 @@ body {
   width: 100%;
 }
 
+.nav__list a {
+  text-decoration: none;
+}
+
+a:link {
+  color: #ef7360;
+}
+
+a:visited {
+  color: #ef7360;
+}
+
 .nav__item {
   text-align: center;
   padding: .5rem 1rem;
