@@ -20,6 +20,7 @@ body {
   height: 100%;
   font-family: 'Poppins', sans-serif;
   font-size: 1rem;
+  color: #3f3f3f;
 }
 
 .container {
@@ -257,6 +258,24 @@ align-items: center;
   align-items: center;
 }
 
+/* CONTACT ME*/
+
+.contact {
+  display: flex;
+  align-items: center;
+}
+
+.git {
+  height: 50px;
+  width: 52px;
+  margin-right: 2rem;
+}
+
+.email {
+  height: 38px;
+  width: 52px;
+}
+
 /* MY PROJECTS  */
 
 .projects {
@@ -315,7 +334,22 @@ h3 {
   margin-top: 1rem;
   margin-bottom: 1rem;
   font-size: 0.8rem;
+}
 
+.buttons a {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.buttons a:link {
+  color: #7691ff;
+}
+
+.buttons a:visited {
+  color: #7691ff;
 }
 
 .view__site {
@@ -355,6 +389,7 @@ h3 {
     justify-content: space-between;
     margin-top: 1rem;
     margin-bottom: 0;
+    cursor: pointer;
   }
   .view__site {
     margin-bottom: 1rem;
